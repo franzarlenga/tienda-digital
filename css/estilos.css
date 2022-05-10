@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: radial-gradient(#fff, #ccc);
 }
 
 main {
@@ -199,10 +200,15 @@ h3 {
     color: #fff;
 }
 
+form ::placeholder {
+    color: #fff;
+}
+
 .form__input:focus {
     background: #49a;
     outline: none;
     border-bottom: #ccc solid 2px;
+    transition: all 1s;
 }
 
 
