@@ -5,57 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> TIENDA STORE AR </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="/css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 <body class="body">
-    <header class="header1">
-        <ul class="nav__lista">
-            <li class="nav__item"><a class="nav__enlace-headerBis" href="/paginas/ingresar.html"><span class="jam jam-user"></span>Registrarse</a></li>
-            <li class="nav__item"><a class="nav__enlace-headerBis" href="/paginas/ingresar.html">Iniciar Sesion</a></li>
-        </ul>
-    </header>
-    <header class="header2">
-            <a href="#cascada" class="header__open">
-                <span class="jam jam-menu"></span>
-            </a>
-            <nav class="nav" id="cascada">
-                <ul class="nav__lista">
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="productos.html">Productos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="quienesomos.html">Quienes Somos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="faq.html">FAQ</a>
-                    </li>
-                    </li>
-                    <li class="nav__item nav__item--close">
-                        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
-                    </li>
-                    
-                </ul>
-            </nav>
-            <a href="/paginas/ingresar.html" class="header__open1">
-                <span class="jam jam-user"></span></a>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                  <img src="/imagenes/logo apple.png" alt="logo" width="80px" height="80px">
+                </a>
+              </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/productos.html">Productos</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/quienesomos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/ingresar.html">Ingresar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
     <main>
-        <div class="contenedor_logueo">
-            <form class="form">
-                <div class="logueo">
-                    <input type="email" class="form__input" placeholder="ingresar correo electronico">
-                </div>
-                <div class="logueo">
-                    <input type="password" class="form__input" placeholder="ingresar contraseña">
-                </div>
-                <div><button>Ingresar</button></div>
-            </form>
+        <div class="contenedor_logueo"> 
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
     </main>
 
@@ -73,5 +76,6 @@
             <p class="footer__texto">Copyright. Tienda Online - 2022 - Argentina - TODOS LOS DERECHOS RESERVADOS<span></span></p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

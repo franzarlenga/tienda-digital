@@ -22,18 +22,18 @@ main {
     color: #42a;
 }
 
-img {
+.img-fluid {
+    padding: 20px;
+}
+
+.navbar-nav {
+    align-items: center;
     display: flex;
     margin: auto;
 }
 
-.nav__enlace-headerBis {
-    text-decoration: none;
-    color: #000;
-}
-
-.nav__enlace-headerBis:hover {
-    color:#42a
+.navbar-brand img {
+    justify-content: left;
 }
 
 .header2 {
@@ -58,9 +58,6 @@ img {
     width: 100%;
 }
 
-.nav {
-    padding: 1rem;
-}
 
 .nav__lista {
     display: flex;
@@ -131,7 +128,7 @@ h3 {
     background-color: #000;
     color: #fff;
     padding: 2rem;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 .footer__contacto {
@@ -252,8 +249,11 @@ form ::placeholder {
     margin: auto;
     width: 50px;  
     height: 50px;
-
 }    
+
+footer a {
+    text-decoration: none;
+}
 
 .header__open {
     display: none;
@@ -278,7 +278,21 @@ form ::placeholder {
     justify-content: center;
 }
 
+.card-img-top {
+    width: 200px;
+    height: 200px
+}
 
+.card {
+    align-items: center;
+    margin: 5px;
+
+}
+
+.btn {
+    margin: auto;
+    align-items: center;
+    }
 
 @media screen and (max-width: 1023px) {
 
@@ -294,7 +308,7 @@ form ::placeholder {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
     .seccion1 {
         display: flex;
         height: 100vh;
@@ -311,11 +325,6 @@ form ::placeholder {
 
     .nav {
         display: none;
-    }
-
-    img {
-        display: flex;
-        margin: auto;
     }
 
     .header1 {

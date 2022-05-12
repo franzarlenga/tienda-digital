@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,70 +13,67 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-<div>
-    <header class="header1">
-        <ul class="nav__lista">
-            <li class="nav__item"><a class="nav__enlace-headerBis" href="/paginas/ingresar.html"><span class="jam jam-user"></span>Registrarse</a></li>
-            <li class="nav__item"><a class="nav__enlace-headerBis" href="/paginas/ingresar.html">Iniciar Sesion</a></li>
-        </ul>
-    </header>
-    <header class="header2">
-            <a href="#cascada" class="header__open">
-                <span class="jam jam-menu"></span></a>
-            <nav class="nav" id="cascada">
-            <div>
-                <a href="index.html"><span><img src="/imagenes/logo apple.png" alt="logoinicio" width="60px" height="60px"></span></a>
-            </div>
-
-            <div>
-                <ul class="nav__lista">
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="/paginas/productos.html">Productos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="/paginas/quienesomos.html">Quienes Somos</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__enlace" href="/paginas/faq.html">FAQ</a>
-                    </li>
-                    </li>
-                    <li class="nav__item nav__item--close">
-                        <a class="nav__enlace" href="#"><span class="jam jam-close"></span></a>
-                    </li> 
-                </ul>
-            </div>
-            </nav>
-            <a href="/paginas/ingresar.html" class="header__open1">
-                <span class="jam jam-user"></span></a>
-    </header>
-
-    <main>
-        <section class="seccion1">
-            <img src="/imagenes/banner.jpg" alt="fondo">
-            <h1 class="seccion1__titulo"> BIENVENIDOS A LA TIENDA DIGITAL</h1>
-            <h2 class="seccion1__subtitulo"></h2>
-            <p class="seccion1__parrafo"></p>
-        </section>
-    </main>
-
-    
-    <footer class="footer">
-        <div class="footer__contacto">
-            <div class="footer__redes">
-                <a href="www.whatsapp.com"><span class="jam jam-whatsapp"></span></a>
-                <a href="www.instagram.com"><span class="jam jam-instagram"></span></a>
-                <a href="www.facebook.com"><span class="jam jam-facebook"></span></a>
-                <a href="www.youtube.com"><span class="jam jam-youtube"></span></a>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                  <img src="/imagenes/logo apple.png" alt="logo" width="80px" height="80px">
+                </a>
+              </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/productos.html">Productos</a>
+                  </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/quienesomos.html">Quienes somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/paginas/ingresar.html">Ingresar</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__marca">
-            <img class="footer__logo" src="/imagenes/logo apple.png" alt="logotipo apple" width="120" height="120">
-            <p class="footer__texto">Copyright. Tienda Digital - 2022 - Argentina - TODOS LOS DERECHOS RESERVADOS<span></span></p>
+      </nav>
+      <img src="/imagenes/banner.jpg" class="img-fluid" alt="banner">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/imagenes/11pro.jpg" class="d-block w-100" alt="presetacion1">
+              </div>
+          <div class="carousel-item">
+            <img src="/imagenes/celulares agua.jpg" class="d-block w-100" alt="presetacion3">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<footer class="footer">
+  <div class="footer__contacto">
+      <div class="footer__redes">
+          <a href="whatsapp.com"><span class="jam jam-whatsapp"></span></a>
+          <a href="instagram.com"><span class="jam jam-instagram"></span></a>
+          <a href="facebook.com"><span class="jam jam-facebook"></span></a>
+          <a href="youtube.com"><span class="jam jam-youtube"></span></a>
+      </div>
+  </div>
+  <div class="footer__marca">
+      <img class="footer__logo" src="/imagenes/logo apple.png" alt="logotipo apple" width="120" height="120">
+      <p class="footer__texto">Copyright. Tienda Digital - 2022 - Argentina - TODOS LOS DERECHOS RESERVADOS<span></span></p>
+  </div>
 </footer>
-</div>
 </body>
 </html>
