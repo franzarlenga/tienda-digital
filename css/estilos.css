@@ -32,6 +32,11 @@ main {
     margin: auto;
 }
 
+.img-fluid {
+    display: flex;
+    margin: auto;
+}
+
 .navbar-brand img {
     justify-content: left;
 }
