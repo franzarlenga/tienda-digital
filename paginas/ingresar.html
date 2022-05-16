@@ -9,8 +9,8 @@
   
   <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="body">
@@ -41,28 +41,26 @@
             </ul>
           </div>
         </div>
-      </nav>
+    </nav>
 
     <main>
-        <div class="contenedor_logueo"> 
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
+      <form class="loginPage">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"><a href="#">¿Olvidó tu contraseña? Ingrese aquí.</a></div>
         </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
     </main>
-
     <footer class="footer">
         <div class="footer__contacto">
             <div class="footer__redes">
