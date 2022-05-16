@@ -22,10 +22,6 @@ main {
     color: #42a;
 }
 
-.img-fluid {
-    padding: 20px;
-}
-
 .navbar-nav {
     align-items: center;
     display: flex;
@@ -75,6 +71,9 @@ main {
     margin-left: 16px;
 }
 
+.banner img {
+    padding: 0.4rem;
+}
 
 .nav__enlace {
     color: #fff;
@@ -132,8 +131,8 @@ h3 {
     margin-top: 1rem;
     background-color: #000;
     color: #fff;
-    padding: 2rem;
-    font-size: 30px;
+    padding: 1rem;
+    font-size: 25px;
 }
 
 .footer__contacto {
@@ -283,20 +282,38 @@ footer a {
     justify-content: center;
 }
 
+.row {
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropdown{
+    display: flex;
+    margin: auto;
+}
+
 .card-img-top {
     width: 200px;
     height: 200px
 }
 
 .card {
+    justify-content: space-around;
     align-items: center;
-    margin: 5px;
+    margin: auto;
+}
 
+.col-sm-3 {
+    padding: 0px;
 }
 
 .btn {
     margin: auto;
-    align-items: center;
+    justify-items: center;
     }
 
 @media screen and (max-width: 1023px) {
