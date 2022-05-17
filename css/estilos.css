@@ -23,6 +23,7 @@ main {
     justify-content: right;
     align-items: center;
     color: #42a;
+
 }
 
 .navbar-nav {
@@ -72,7 +73,15 @@ main {
 }
 
 .nav__item {
-    margin-left: 0;
+    display: flex;
+    padding: 5px;
+    font-style: inherit;
+}
+
+.nav-item { 
+    padding: 6px;
+    text-align: center;
+
 }
 
 .banner img {
@@ -80,8 +89,14 @@ main {
 }
 
 .nav__enlace {
-    color: #fff;
+    color: rgb(70, 117, 219);
     text-decoration: none;
+}
+
+.nav__enlace:hover {
+    color: rgb(27, 63, 141);
+    text-decoration: none;
+    transition: 0.4s;
 }
 
 h1 {
@@ -165,13 +180,19 @@ h3 {
     font-size: x-large;
 }
 
-.preguntas {
-    background-color: #ffe;
-    border: #000 solid 1px;
-    padding: 50px;
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+.contenedor_preguntas {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: dense;
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+    align-content: space-around;
 }
 
 .preguntas:first-child {
@@ -180,11 +201,38 @@ h3 {
     grid-row: 1 / 3;
 }
 
+.preguntas {
+    background-color: rgb(56, 110, 211);
+    border: #000 solid 1px;
+    text-align: center;
+    height: 250px;
+    width: 300px;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+    transition: 1,5s;
+}
+
+
+.preguntas:hover {
+    background-color: rgb(10, 41, 95);
+    color: #fff;
+    border: #000 solid 1px;
+    padding: 50px;
+    font-size: 20px;
+    text-align: center;
+    transition: 1s;
+    
+}
+
+
+
 .loginPage {
     display: flex;
     flex-direction: column;
     align-content: center;
     background-color: #ccc;
+    border: none;
     margin: auto;
     margin-top: 250px;
     padding: 30px;
@@ -193,47 +241,11 @@ h3 {
     border-radius: 6%;
 }
 
-.form {
-    min-width: 500px;
-    flex: 1;
-    text-align: center;
-}
-
-.form__input {
-    width: 50%;
-    padding: 9px;
-    margin: 7px;
-    border: none;
-    border-bottom: #fff solid 2px;
-    background: transparent;
-    color: #fff;
-}
-
-form ::placeholder {
-    color: #fff;
-}
-
-.form__input:focus {
-    background: #49a;
+.loginPage input:hover {
+    background: rgb(241, 240, 240);
     outline: none;
-    border-bottom: #ccc solid 2px;
-    transition: all 1s;
-}
-
-
-.contenedor_preguntas {
-    display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
-    grid-auto-rows: 1fr;
-    grid-auto-columns: 1fr;
-    grid-auto-flow: dense;
-    height: 600px;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    align-items: center;
-    justify-items: center;
-    
+    border-bottom: rgb(39, 75, 151) solid 2px;
+    transition: 1s;
 }
 
 
@@ -313,6 +325,7 @@ footer a {
     justify-content: space-around;
     align-items: center;
     margin: auto;
+    text-align: center;
 }
 
 .col-sm-3 {
@@ -320,11 +333,21 @@ footer a {
 }
 
 .btn {
+    display: flex;
     margin: auto;
-    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: fit-content;
     }
 
-@media screen and (max-width: 1023px) {
+dl, ol, ul {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+@media screen and (min-width: 1023px) {
 
     .header__open1 {
         display: none;
@@ -334,22 +357,43 @@ footer a {
         flex-direction: column;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-left: 0;
-    }
+    .navbar-expand-lg .navbar-collapse {
+        display: flex!important;
+        flex-basis: inherit;
+        justify-content: right;
+        flex-wrap: wrap;
+        }
 
 }
 
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 993px) {
     .seccion1 {
         display: flex;
         height: 100vh;
     }
 
-    .header2 {
+    .navbar-brand {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .navbar-toggler-icon {
+        display: flex;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .jam-user {
@@ -446,4 +490,5 @@ footer a {
         margin-left: 0;
     }
 
+    
 }
