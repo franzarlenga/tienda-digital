@@ -1,0 +1,72 @@
+.header__marca {
+    width: 130px;
+    height: 32px;
+}
+
+.header__logo {
+    height: 100%;
+    width: 100%;
+}
+
+.header1 {
+    background-color: #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    color: #42a;
+}
+
+.header__open {
+    display: none;
+}
+
+.navbar-nav {
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+.img-fluid {
+    display: flex;
+    margin: auto;
+}
+
+.navbar-brand img {
+    justify-content: left;
+}
+
+.nav__lista {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.nav__item {
+    display: flex;
+    padding: 5px;
+    font-style: inherit;
+}
+
+.nav-item { 
+    padding: 6px;
+    text-align: center;
+
+}
+
+.nav__enlace {
+    color: rgb(70, 117, 219);
+    text-decoration: none;
+
+    &:hover {
+        color: rgb(27, 63, 141);
+        text-decoration: none;
+        transition: 0.4s;
+    }
+}
+
+.nav__item--close {
+    display: none;
+}
+

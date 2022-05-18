@@ -1,0 +1,48 @@
+.contenedor_productos {
+    display: grid;
+    grid-template-columns: repeat(2, 220px);
+    grid-template-rows: repeat(2, 220px);
+    justify-items: center;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dropdown{
+    display: flex;
+    margin: auto;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px
+}
+
+.card {
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.col-sm-3 {
+    padding: 0px;
+}
+
+.btn {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    width: fit-content;
+    }

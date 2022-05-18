@@ -1,0 +1,20 @@
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: #ccc;
+    border: none;
+    margin: auto;
+    margin-top: 250px;
+    padding: 30px;
+    height: fit-content;
+    width: 450px;
+    border-radius: 6%;
+}
+
+.loginPage input:hover {
+    background: rgb(241, 240, 240);
+    outline: none;
+    border-bottom: rgb(39, 75, 151) solid 2px;
+    transition: 1s;
+}
