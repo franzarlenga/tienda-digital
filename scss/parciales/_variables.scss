@@ -1,0 +1,12 @@
+$color-brand: rgb(54, 95, 124); 
+
+@mixin flex-row-center{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+@mixin flex-column{
+    display:flex;
+    flex-direction:column;
+}

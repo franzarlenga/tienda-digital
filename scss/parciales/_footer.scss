@@ -7,16 +7,21 @@
 
 
 &__contacto {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: flex-start;
     align-items: flex-end;
     gap: 1rem;
 }
 
+&__logo {
+    @include flex-row-center;
+    margin: auto;
+    width: 50px;  
+    height: 50px;
+}   
+
 &__redes {
-    display: flex;
-    flex-direction: row;
+    @include flex-row-center;
     margin: auto;
     gap: 16px;
 }
@@ -26,14 +31,6 @@
     text-align: center;
     font-size: x-small;
 }
-
-&__logo {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 50px;  
-    height: 50px;
-}    
 
 & a {
     text-decoration: none;

@@ -1,10 +1,21 @@
 .jam-whatsapp, .jam-instagram, .jam-facebook, .jam-youtube {
     text-decoration: none;
-    color: #fff;
 }
 
 .jam-users {
     text-decoration: none;
-    color: #42a;
     font-size: x-large;
+}
+
+$redes:
+    "instagram" rgb(135, 36, 111),
+    "facebook" rgb(39, 75, 165),
+    "youtube" rgb(148, 24, 24),
+    "whatsapp" rgb(86, 137, 76),
+    "users" rgb(70, 161, 211);
+
+@each $clave, $value in $redes {
+    .jam-#{$clave} {
+        background-color: ($value);
+    }
 }

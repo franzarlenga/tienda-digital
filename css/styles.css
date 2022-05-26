@@ -57,7 +57,7 @@ main {
   text-align: center; }
 
 .nav__enlace {
-  color: #4675db;
+  color: #365f7c;
   text-decoration: none; }
   .nav__enlace:hover {
     color: #1b3f8d;
@@ -68,13 +68,26 @@ main {
   display: none; }
 
 .jam-whatsapp, .jam-instagram, .jam-facebook, .jam-youtube {
-  text-decoration: none;
-  color: #fff; }
+  text-decoration: none; }
 
 .jam-users {
   text-decoration: none;
-  color: #42a;
   font-size: x-large; }
+
+.jam-instagram {
+  background-color: #87246f; }
+
+.jam-facebook {
+  background-color: #274ba5; }
+
+.jam-youtube {
+  background-color: #941818; }
+
+.jam-whatsapp {
+  background-color: #56894c; }
+
+.jam-users {
+  background-color: #46a1d3; }
 
 .footer {
   margin-top: 1rem;
@@ -88,21 +101,23 @@ main {
     justify-content: flex-start;
     align-items: flex-end;
     gap: 1rem; }
+  .footer__logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    width: 50px;
+    height: 50px; }
   .footer__redes {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin: auto;
     gap: 16px; }
   .footer__texto {
     order: 1;
     text-align: center;
     font-size: x-small; }
-  .footer__logo {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-    width: 50px;
-    height: 50px; }
   .footer a {
     text-decoration: none; }
 
@@ -163,7 +178,7 @@ main {
   align-content: space-around; }
 
 .preguntas {
-  background-color: #386ed3;
+  background-color: #365f7c;
   border: #000 solid 1px;
   text-align: center;
   height: 250px;
