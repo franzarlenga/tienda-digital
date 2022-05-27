@@ -60,7 +60,7 @@ main {
   color: #365f7c;
   text-decoration: none; }
   .nav__enlace:hover {
-    color: #1b3f8d;
+    color: #365f7c;
     text-decoration: none;
     transition: 0.4s; }
 
@@ -192,7 +192,7 @@ main {
     grid-column: 1 / 3;
     grid-row: 1 / 3; }
   .preguntas:hover {
-    background-color: #0a295f;
+    background-color: #365f7c;
     color: #fff;
     border: #000 solid 1px;
     padding: 50px;
@@ -216,7 +216,7 @@ main {
 .loginPage input:hover {
   background: #f1f0f0;
   outline: none;
-  border-bottom: #274b97 solid 2px;
+  border-bottom: #365f7c solid 2px;
   transition: 1s; }
 
 @media screen and (min-width: 1023px) {

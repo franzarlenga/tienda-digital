@@ -15,6 +15,6 @@
 .loginPage input:hover {
     background: rgb(241, 240, 240);
     outline: none;
-    border-bottom: rgb(39, 75, 151) solid 2px;
+    border-bottom: $color-brand solid 2px;
     transition: 1s;
 }
