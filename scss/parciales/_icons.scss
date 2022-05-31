@@ -1,5 +1,6 @@
-.jam-whatsapp, .jam-instagram, .jam-facebook, .jam-youtube {
+.jam-whatsapp, .jam-instagram, .jam-facebook-circle, .jam-youtube-circle {
     text-decoration: none;
+    font-size: 25px;
 }
 
 .jam-users {
@@ -8,11 +9,11 @@
 }
 
 $redes:
-    "instagram" rgb(135, 36, 111),
-    "facebook" rgb(39, 75, 165),
-    "youtube" rgb(148, 24, 24),
-    "whatsapp" rgb(86, 137, 76),
-    "users" rgb(70, 161, 211);
+    "instagram" rgba(135, 36, 110, 0.437),
+    "facebook-circle" rgba(39, 75, 165, 0.437),
+    "youtube-circle" rgba(148, 24, 24, 0.437),
+    "whatsapp" rgba(86, 137, 76, 0.437),
+    "users" rgba(70, 161, 211, 0.437);
 
 @each $clave, $value in $redes {
     .jam-#{$clave} {

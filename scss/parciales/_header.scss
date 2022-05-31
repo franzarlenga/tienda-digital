@@ -58,11 +58,11 @@
 }
 
 .nav__enlace {
-    color:$color-brand;
+    color:#fff;
     text-decoration: none;
 
     &:hover {
-        color: $color-brand;
+        color: rgba(66, 134, 223, 0.856);
         text-decoration: none;
         transition: 0.4s;
     }
@@ -72,3 +72,7 @@
     display: none;
 }
 
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 0 ;
+}

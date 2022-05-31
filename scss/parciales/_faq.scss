@@ -7,8 +7,8 @@
     margin: 40px;
     grid-auto-flow: dense;
     grid-gap: 10px;
-     }
-.faq-container .faq-box {
+     
+& .faq-box {
     background: #355C7D;
     display: grid;
     padding: 20px;
@@ -19,29 +19,30 @@
     transition: .8s;
 }
 
-.faq-container .faq-box:hover {
+& .faq-box:hover {
     background-color: #6C5B7B;
 }
 
-.faq-container .faq-box img {
+& .faq-box img {
     position: relative;
     max-width: 100%;
 }
 
-.faq-container .faq-box:first-child {
+& .faq-box:first-child {
     grid-column: span 2;
     grid-row: span 1;
 }
 
-.faq-container .faq-box:nth-child(2) {
+& .faq-box:nth-child(2) {
     grid-column: span 1;
     grid-row: span 2;
 }
-.faq-container .faq-box:nth-child(4) {
+& .faq-box:nth-child(4) {
     grid-column: span 1;
     grid-row: span 2;
 }
-.faq-container .faq-box:nth-child(5) {
+& .faq-box:nth-child(5) {
     grid-column: span 1;
     grid-row: span 2;
+}
 }
