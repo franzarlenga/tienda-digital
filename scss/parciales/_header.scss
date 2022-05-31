@@ -9,12 +9,14 @@
 }
 
 .header1 {
-    background-color: #ddd;
+    background-color: $color-brand;
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
-    color: #42a;
+    & a {
+        color: #fff;
+    }
 }
 
 .header__open {
