@@ -218,12 +218,11 @@ footer a {
   height: fit-content;
   width: 450px;
   border-radius: 6%; }
-
-.loginPage input:hover {
-  background: #f1f0f0;
-  outline: none;
-  border-bottom: #365f7c solid 2px;
-  transition: 1s; }
+  .loginPage input:hover {
+    background: #f1f0f0;
+    outline: none;
+    border-bottom: #365f7c solid 2px;
+    transition: .4s; }
 
 @media screen and (min-width: 1023px) {
   .header__open1 {

@@ -10,11 +10,9 @@
     height: fit-content;
     width: 450px;
     border-radius: 6%;
-}
-
-.loginPage input:hover {
+& input:hover {
     background: rgb(241, 240, 240);
     outline: none;
     border-bottom: $color-brand solid 2px;
-    transition: 1s;
-}
+    transition: .4s;
+}}
