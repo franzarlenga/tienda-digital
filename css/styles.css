@@ -5,7 +5,7 @@
   font-family: 'Open Sans', sans-serif; }
 
 body {
-  background: radial-gradient(#C06C84, #6C5B7B);
+  background: radial-gradient(white, #c1c1c1);
   min-height: 100vh; }
 
 .header__marca {
@@ -161,6 +161,10 @@ footer a {
 .col-sm-3 {
   padding: 0px; }
 
+.row ul {
+  grid-column: span 1;
+  grid-row: span 6; }
+
 .btn {
   display: flex;
   margin: auto;
@@ -176,7 +180,7 @@ footer a {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-template-rows: minmax(300px, auto);
-  margin: 40px;
+  margin: 30px;
   grid-auto-flow: dense;
   grid-gap: 10px; }
   .faq-container .faq-box {
@@ -188,11 +192,16 @@ footer a {
     text-align: center;
     color: #fff;
     transition: .8s; }
+  .faq-container .faq-box .faq p {
+    display: none; }
   .faq-container .faq-box:hover {
     background-color: #6C5B7B; }
+  .faq-container .faq-box:hover p {
+    display: block;
+    transition: all .4s; }
   .faq-container .faq-box img {
     position: relative;
-    max-width: 100%; }
+    max-width: 50%; }
   .faq-container .faq-box:first-child {
     grid-column: span 2;
     grid-row: span 1; }
@@ -223,6 +232,17 @@ footer a {
     outline: none;
     border-bottom: #365f7c solid 2px;
     transition: .4s; }
+
+.container-us {
+  display: inline-block;
+  margin: auto; }
+  .container-us h2 {
+    font-size: 4.2em;
+    text-align: center;
+    border-bottom: 1px solid #365f7c; }
+  .container-us h5 {
+    font-size: 1.7em;
+    margin: 10px; }
 
 @media screen and (min-width: 1023px) {
   .header__open1 {

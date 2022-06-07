@@ -1,0 +1,15 @@
+.container-us {
+    display: inline-block;
+    margin: auto;
+
+    & h2 {
+        font-size: 4.2em;
+        text-align: center;
+        border-bottom: 1px solid $color-brand;
+    }
+
+    & h5 {
+        font-size: 1.7em;
+        margin: 10px;
+    }
+}

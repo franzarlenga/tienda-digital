@@ -37,6 +37,11 @@
     padding: 0px;
 }
 
+.row ul {
+    grid-column: span 1;
+    grid-row: span 6;
+}
+
 .btn {
     display: flex;
     margin: auto;

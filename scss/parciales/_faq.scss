@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: minmax(300px, auto);
-    margin: 40px;
+    margin: 30px;
     grid-auto-flow: dense;
     grid-gap: 10px;
      
@@ -17,15 +17,24 @@
     text-align: center;
     color: #fff;
     transition: .8s;
+
+}
+& .faq-box .faq p {
+    display: none;
 }
 
 & .faq-box:hover {
     background-color: #6C5B7B;
 }
 
+& .faq-box:hover p {
+    display: block;
+    transition: all .4s;
+}
+
 & .faq-box img {
     position: relative;
-    max-width: 100%;
+    max-width: 50%;
 }
 
 & .faq-box:first-child {
