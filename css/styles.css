@@ -235,7 +235,8 @@ footer a {
 
 .container-us {
   display: inline-block;
-  margin: auto; }
+  margin: auto;
+  padding-bottom: 20px; }
   .container-us h2 {
     font-size: 4.2em;
     text-align: center;
@@ -256,6 +257,9 @@ footer a {
     flex-wrap: wrap; } }
 
 @media screen and (max-width: 991px) {
+  main {
+    height: 100vh;
+    width: fit-content; }
   .seccion1 {
     display: flex;
     height: 100vh; }
@@ -343,4 +347,6 @@ footer a {
     grid-template-rows: minmax(auto, auto); }
   .faq-container .faq-box {
     grid-column: unset !important;
-    grid-row: unset !important; } }
+    grid-row: unset !important; }
+  .container-us {
+    width: fit-content; } }
