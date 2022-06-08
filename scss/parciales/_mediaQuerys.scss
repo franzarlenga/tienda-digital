@@ -18,12 +18,7 @@
 }
 
 
-@media screen and (max-width: 991px) {
-    main {
-        height: 100vh;
-        width: fit-content;
-    }
-    
+@media screen and (max-width: 991px) {    
     .seccion1 {
         display: flex;
         height: 100vh;
