@@ -9,32 +9,31 @@
     grid-gap: 10px;
      
 & .faq-box {
-    background: #355C7D;
+    background: $color-brand;
     display: grid;
     padding: 20px;
-    font-size: 1em;
+    font-size: 20px;
     place-items: center;
     text-align: center;
     color: #fff;
     transition: .8s;
 
 }
-& .faq-box .faq p {
-    display: none;
-}
 
 & .faq-box:hover {
-    background-color: #6C5B7B;
-}
-
-& .faq-box:hover p {
-    display: block;
-    transition: all .4s;
+    background-color: #5e4872;
 }
 
 & .faq-box img {
     position: relative;
-    max-width: 50%;
+    max-width: 65%;
+    margin-bottom: 10px;
+}
+
+& .faq-box img:nth-child(5) {
+    position: relative;
+    max-width: 25%;
+    margin-bottom: 10px;
 }
 
 & .faq-box:first-child {
@@ -42,16 +41,12 @@
     grid-row: span 1;
 }
 
-& .faq-box:nth-child(2) {
-    grid-column: span 1;
-    grid-row: span 2;
-}
 & .faq-box:nth-child(4) {
     grid-column: span 1;
     grid-row: span 2;
 }
 & .faq-box:nth-child(5) {
-    grid-column: span 1;
-    grid-row: span 2;
-}
+    grid-column: span 3;
+    grid-row: span 1;
+} 
 }
