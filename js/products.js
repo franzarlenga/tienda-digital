@@ -16,26 +16,29 @@ const products = [
     {
         id:1,
         title:"iPhone 13",
+        img: "../imagenes/ip13.png",
         price: 1200
     },
     {
         id:2,
         title:"iPhone 12",
+        img: "../imagenes/ip12.png",
         price: 1000
     },
     {
         id:3,
         title:"iPhone xr",
+        img: "../imagenes/ipxr.png",
         price: 950
     },
 ];
 
-products.forEach((product) => {
+products.forEach((products) => {
     const idButton = `add-cart${products.id}` 
     document.getElementById("seccion-card").innerHTML += `
     <div class="phones">
         <div class="phoneBox">
-        <img src="../imagenes/ip13.png" alt="13">
+        <img src="${products.img}" alt="${products.id}">
         <ul class="actions">
             <li>
             <i class="fa-solid fa-cart-shopping"></i>
@@ -62,7 +65,7 @@ products.forEach((product) => {
         </div>`;
 })
 
-products.forEach((product) => {
+products.forEach((products) => {
     const idButton = `add-cart${products.id}`
     document.getElementById(idButton).addEventListener('click', () => {
         alert(`${products.title} added successfully to cart`);
