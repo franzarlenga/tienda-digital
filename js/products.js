@@ -1,5 +1,5 @@
 function cardMaker() {
-    cart.forEach((product) => {
+    cart.forEach((products) => {
         document.getElementById("cards-modal").innerHTML += `<div>
             <p>${product.id}
             - ${product.title}
@@ -11,27 +11,15 @@ function cardMaker() {
     
 }
 
+const cart = {};
 
 const products = [
-    {
-        id:1,
-        title:"iPhone 13",
-        img: "../imagenes/ip13.png",
-        price: 1200
-    },
-    {
-        id:2,
-        title:"iPhone 12",
-        img: "../imagenes/ip12.png",
-        price: 1000
-    },
-    {
-        id:3,
-        title:"iPhone xr",
-        img: "../imagenes/ipxr.png",
-        price: 950
-    },
+    {id:1, title:"iPhone 13",img: "../imagenes/ip13.png",price: 1200},
+    {id:2,title:"iPhone 12",img: "../imagenes/ip12.png",price: 1000},
+    {id:3,title:"iPhone xr",img: "../imagenes/ipxr.png",price: 950},
 ];
+
+let cards = "";
 
 products.forEach((products) => {
     const idButton = `add-cart${products.id}` 
@@ -42,7 +30,7 @@ products.forEach((products) => {
         <ul class="actions">
             <li>
             <i class="fa-solid fa-cart-shopping"></i>
-            <span>Agregar al carro</span>
+            <span class="button" id="${idButton}">Agregar al carro</span>
             </li>
             <li>
             <i class="fa-solid fa-heart"></i>
@@ -59,7 +47,7 @@ products.forEach((products) => {
             <h3>${products.title}</h3>
         </div>
         <div class="price">
-            <h2>${products.price}</h2>
+            <h2>$${products.price}</h2>
         </div>
         </div>
         </div>`;
@@ -67,10 +55,25 @@ products.forEach((products) => {
 
 products.forEach((products) => {
     const idButton = `add-cart${products.id}`
-    document.getElementById(idButton).addEventListener('click', () => {
+    document.getElementById(idButton).addEventListener('click', (event) => {
+        console.log(event);
         alert(`${products.title} added successfully to cart`);
-    });
+    })
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* products.forEach((product) => {
     const idButton = `add-cart${product.id}` 
@@ -90,4 +93,4 @@ products.forEach((products) => {
             </tr>`
         })
     })
-}); */
+}) */
